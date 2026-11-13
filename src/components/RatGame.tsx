@@ -26,9 +26,24 @@ const RatGame = () => {
       </Description>
       <ScreenshotsTitle>Screenshots from the game</ScreenshotsTitle>
       <Screenshots>
-        <Screenshot src={mamaRat} alt="Mama rat in the rat game" />
-        <Screenshot src={ratEatingCheese} alt="Rat eating cheese" />
-        <Screenshot src={ratJumping} alt="Rat jumping in the game" />
+        <Screenshot
+          src={mamaRat}
+          alt="Mama rat in the rat game"
+          width={1917}
+          height={1078}
+        />
+        <Screenshot
+          src={ratEatingCheese}
+          alt="Rat eating cheese"
+          width={1917}
+          height={1078}
+        />
+        <Screenshot
+          src={ratJumping}
+          alt="Rat jumping in the game"
+          width={1917}
+          height={1078}
+        />
       </Screenshots>
     </Section>
   );

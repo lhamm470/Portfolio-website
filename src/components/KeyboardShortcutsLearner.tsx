@@ -30,11 +30,23 @@ const KeyboardShortcutsLearner = () => {
       </Description>
       <ScreenshotsTitle>Screenshots from the website</ScreenshotsTitle>
       <Screenshots>
-        <Screenshot src={roadmap} alt="Keyboard shortcuts learner roadmap" />
-        <Screenshot src={levelModule} alt="Keyboard shortcuts level module" />
+        <Screenshot
+          src={roadmap}
+          alt="Keyboard shortcuts learner roadmap"
+          width={1917}
+          height={970}
+        />
+        <Screenshot
+          src={levelModule}
+          alt="Keyboard shortcuts level module"
+          width={1917}
+          height={965}
+        />
         <Screenshot
           src={learnModule}
           alt="Keyboard shortcuts learning module"
+          width={1917}
+          height={965}
         />
       </Screenshots>
     </Section>
