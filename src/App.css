@@ -17,6 +17,52 @@
   }
 }
 
+.project-navigation {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  width: 100%;
+  margin: 28px auto 0;
+  padding: 0 24px;
+}
+
+.project-navigation__link {
+  display: inline-flex;
+  align-items: center;
+  min-height: 40px;
+  padding: 9px 16px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: var(--bg);
+  color: var(--text);
+  font-size: 0.9rem;
+  font-weight: 600;
+  line-height: 1.2;
+  text-decoration: none;
+  transition:
+    background-color 160ms ease,
+    border-color 160ms ease,
+    color 160ms ease,
+    transform 160ms ease;
+}
+
+.project-navigation__link:hover {
+  border-color: var(--accent-border);
+  background: var(--social-bg);
+  color: var(--text-h);
+  transform: translateY(-1px);
+}
+
+.project-navigation__link:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 .hero {
   position: relative;
 

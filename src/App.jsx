@@ -1,14 +1,16 @@
-import { useState } from "react";
-import heroImg from "./assets/hero.png";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "./assets/vite.svg";
 import "./App.css";
 import Heading from "./components/Heading";
+import KeyboardShortcutsLearner from "./components/KeyboardShortcutsLearner";
+import RatGame from "./components/RatGame";
 
 function App() {
   return (
     <>
-      <Heading></Heading>
+      <Heading />
+      <main>
+        <KeyboardShortcutsLearner />
+        <RatGame />
+      </main>
     </>
   );
 }

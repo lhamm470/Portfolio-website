@@ -1,22 +1,24 @@
 :root {
-  --text: #6b6375;
-  --text-h: #08060d;
+  --text: #515c69;
+  --text-h: #202a36;
   --bg: #fff;
-  --border: #e5e4e7;
-  --code-bg: #f4f3ec;
-  --accent: #aa3bff;
-  --accent-bg: rgba(170, 59, 255, 0.1);
-  --accent-border: rgba(170, 59, 255, 0.5);
-  --social-bg: rgba(244, 243, 236, 0.5);
+  --page-bg: #f7f9fc;
+  --border: #e7ecf2;
+  --code-bg: #f2f5f9;
+  --accent: #617d9a;
+  --accent-bg: rgba(97, 125, 154, 0.035);
+  --accent-border: rgba(97, 125, 154, 0.2);
+  --social-bg: rgba(97, 125, 154, 0.04);
   --shadow:
-    rgba(0, 0, 0, 0.1) 0 10px 15px -3px, rgba(0, 0, 0, 0.05) 0 4px 6px -2px;
+    rgba(36, 54, 76, 0.055) 0 14px 30px -14px,
+    rgba(36, 54, 76, 0.04) 0 4px 10px -4px;
 
-  --sans: system-ui, 'Segoe UI', Roboto, sans-serif;
-  --heading: system-ui, 'Segoe UI', Roboto, sans-serif;
+  --sans: Inter, "Segoe UI", Roboto, system-ui, sans-serif;
+  --heading: Inter, "Segoe UI", Roboto, system-ui, sans-serif;
   --mono: ui-monospace, Consolas, monospace;
 
-  font: 18px/145% var(--sans);
-  letter-spacing: 0.18px;
+  font: 17px/1.6 var(--sans);
+  letter-spacing: 0.01em;
   color-scheme: light dark;
   color: var(--text);
   background: var(--bg);
@@ -32,17 +34,19 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --text: #9ca3af;
-    --text-h: #f3f4f6;
-    --bg: #16171d;
-    --border: #2e303a;
-    --code-bg: #1f2028;
-    --accent: #c084fc;
-    --accent-bg: rgba(192, 132, 252, 0.15);
-    --accent-border: rgba(192, 132, 252, 0.5);
-    --social-bg: rgba(47, 48, 58, 0.5);
+    --text: #b5c0cd;
+    --text-h: #edf2f8;
+    --bg: #1a1f26;
+    --page-bg: #12161c;
+    --border: #343c47;
+    --code-bg: #222933;
+    --accent: #9bb1c8;
+    --accent-bg: rgba(155, 177, 200, 0.045);
+    --accent-border: rgba(155, 177, 200, 0.2);
+    --social-bg: rgba(155, 177, 200, 0.04);
     --shadow:
-      rgba(0, 0, 0, 0.4) 0 10px 15px -3px, rgba(0, 0, 0, 0.25) 0 4px 6px -2px;
+      rgba(0, 0, 0, 0.35) 0 14px 30px -14px,
+      rgba(0, 0, 0, 0.2) 0 4px 10px -4px;
   }
 
   #social .button-icon {
@@ -52,25 +56,47 @@
 
 body {
   margin: 0;
+  min-width: 320px;
+  background: var(--page-bg);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
 #root {
   width: 1126px;
   max-width: 100%;
   margin: 0 auto;
+  background: var(--bg);
   text-align: center;
   border-inline: 1px solid var(--border);
+  box-shadow: var(--shadow);
   min-height: 100svh;
   display: flex;
   flex-direction: column;
-  box-sizing: border-box;
+}
+
+main {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
 }
 
 h1,
-h2 {
+h2,
+h3 {
   font-family: var(--heading);
   font-weight: 500;
   color: var(--text-h);
+}
+
+@media (max-width: 600px) {
+  #root {
+    border-inline: 0;
+  }
 }
 
 h1 {
