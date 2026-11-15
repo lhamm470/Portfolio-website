@@ -26,8 +26,10 @@ const KeyboardShortcutsLearner = () => {
       </Description>
       <Description>
         The levels are time-based, each with a leaderboard so you can compete to
-        get the best times.
+        get the best times. Uses PostrgeSQL to store user data including
+        personal best times.
       </Description>
+      <Description>Built with React, typescript & PostgreSQL.</Description>
       <ScreenshotsTitle>Screenshots from the website</ScreenshotsTitle>
       <Screenshots>
         <Screenshot
