@@ -29,7 +29,7 @@ const KeyboardShortcutsLearner = () => {
         get the best times. Uses PostrgeSQL to store user data including
         personal best times.
       </Description>
-      <Description>Built with React, typescript & PostgreSQL.</Description>
+      <Description>Built with React, TypeScript & PostgreSQL.</Description>
       <ScreenshotsTitle>Screenshots from the website</ScreenshotsTitle>
       <Screenshots>
         <Screenshot
